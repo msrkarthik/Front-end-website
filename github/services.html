@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>IT world | Services</title>
+	<link rel="stylesheet" type="text/css" href="F:\\Web designing\github\welcome_style.css">
+
+	<script>
+		function Submit(){
+			alert("E-mail is successfully registered");
+		}
+		function Send(){
+			alert("Query successfully registered");
+		}
+	</script>
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="branding">
+				<h1>Welcome to <span class="highlight">IT world</span></h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="F:\\Web designing\github\home.html">Home</a></li>
+					<li><a href="F:\\Web designing\github\about.html">About</a></li>
+					<li class="current"><a href="F:\\Web designing\github\services.html">Services</a></li>
+					<li><a href="F:\\Web designing\github\signin.html">Sign in/Sign up</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="newsletter">
+		<div class="container">
+			<h1>Subscribe to get alerts!</h1>
+			<form>
+				<input type="email" id="email" placeholder="Enter email.." required>
+				<button type="submit" onclick="Submit()" class="button1">Subscribe</button>
+			</form>
+		</div>
+	</section>
+
+	<section id="main">
+		<div class="container">
+			<h1><center>Services</center></h1>
+			<article id="main-col">
+				<h1 class="page-title">W3 schools</h1>
+				<ul id="w3school">
+					<li>
+						<h3><strong><i>Front-end technologies</i></strong></h3>
+						<p>Html,Css and javascript</p>
+						<p>Boostrap,Angular js and React js</p>
+						<h3><strong><i>Server-side</i></strong></h3>
+						<p>SQL</p>
+						<p>Python with Django framework,Node.js</p>
+					</li>
+				</ul>
+				<h1 class="page-title">Tutorials point</h1>
+				<ul id="tutorial">
+					<li>
+						<h3><strong><i>Programming</i></strong></h3>
+						<p>C,C++ and Java</p>
+						<p>Python,R and SAAS</p>
+						<h3><strong><i>Data Science</i></strong></h3>
+						<p>Machine learning and Deep learning</p>
+						<p>Big data analytics with MS_Excel</p>
+					</li>
+				</ul>
+				<h1 class="page-title">Geeks for Geeks</h1>
+				<ul id="geek">
+					<li>
+						<h3><strong><i>Practice</i></strong></h3>
+						<p>All programming languages</p>
+						<h3><strong><i>Data structures and Algorithms</i></strong></h3>
+					</li>
+				</ul>
+			</article>
+			<aside id="sidebar">
+				<div class="dark">
+					<h3>Get A Quote</h3>
+					<form class="quote">
+						<div>
+							<label>Name</label><br>
+							<input type="text" placeholder="Name" required>
+						</div>
+						<div>
+							<label>E-mail</label><br>
+							<input type="email" placeholder="e-mail..." required>
+						</div>
+						<div>
+							<label>Message</label><br>
+							<textarea placeholder="message..." required></textarea>
+						</div>
+						<button class="button1" type="submit" onclick="Send()">Send</button>
+					</form>
+				</div>
+			</aside>
+		</div>
+	</section>
+
+	<footer>
+		<p>Karthik webdesign,copyright &copy; 2018</p>
+	</footer>
+</body>
+</html>

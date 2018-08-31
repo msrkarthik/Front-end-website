@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>IT world | Sign-in / Sign-up</title>
+	<link rel="stylesheet" type="text/css" href="F:\\Web designing\github\welcome_style.css">
+
+	<script>
+		function Submit(){
+			alert("E-mail is successfully registered");
+		}
+		function Register(){
+			var a = document.getElementById("name").innerHTML;
+			var b = document.getElementByIf("pwd").innerHTML;
+			var c = document.getElementById("cpwd").innerHTML;
+			if((b == c) && (a != null))
+			{
+				alert("Successfully Registered");
+			}
+			else
+			{
+				alert(document.getElementById("name"));
+				//alert("Data Insufficient or Incorrect");
+			}
+		}
+	</script>
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="branding">
+				<h1>Welcome to <span class="highlight">IT world</span></h1>
+			</div>
+		</div>
+	</header>
+
+	<section id="boxes" class="sign">
+		<div class="container">
+			<article>
+
+			</article>
+			<aside id="sidebar">
+				<div class="dark">
+					<h3><i><strong>New User....Register Here..!</strong></i></h3>
+					<form class="quote">
+						<div>
+							<label>Name</label><br>
+							<input type="text" placeholder="UserName..." required id="name">
+						</div>
+						<div>
+							<label>PhoneNumber</label><br>
+							<input type="text" placeholder="password..." required id="phone">
+						</div>
+						<div>
+							<label>E-mail id</label><br>
+							<input type="emial" placeholder="email..." required id="mail">
+						</div>
+						<div>
+							<label>Password</label><br>
+							<input type="password" placeholder="password..." required id="pwd">
+						</div>
+						<div>
+							<label>Confirm password</label><br>
+							<input type="text" required id="cpwd">
+						</div>
+						<br>
+						<button class="button1" type="submit" onclick="Register()">Register</button>
+					</form>
+				</div>
+			</aside>
+		</div>
+	</section>
+
+	<footer>
+		<p>Karthik webdesign,copyright &copy; 2018</p>
+	</footer>
+</body>
+</html>
