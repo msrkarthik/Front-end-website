@@ -1,9 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>IT world | User</title>
+	<link rel="stylesheet" type="text/css" href="F:\\Web designing\github\welcome_style.css">
+
+	<script>
+		function Submit(){
+			alert("E-mail is successfully registered");
+		}
+	</script>
+
 </head>
 <body>
+	<section id="newsletter">
+		<div class="container">
+			<h1>Subscribe to get alerts!</h1>
+			<form>
+				<input type="email" id="email" placeholder="Enter email.." required>
+				<button type="submit" onclick="Submit()" class="button1">Subscribe</button>
+			</form>
+		</div>
+	</section>
 
+	<section id="boxes">
+		<div class="container">
+			<h1>Welcome User!</h1>
+			<div class="box">
+				<img src="F:\\Web designing\github\images\w3schools.jpg">
+				<h3><a href="https://w3schools.com" target="_blank">W3 schools</a></h3>
+				<p>W3 schools is the best website to study all type of languages used to design a website</p>
+			</div>
+			<div class="box">
+				<img src="F:\\Web designing\github\images\tutorial.jpg">
+				<h3><a href="https://tutorialspoint.com" target="_blank">Tutorials point</a></h3>
+				<p>Be it any programming language,This will help you on that way</p>
+			</div>
+			<div class="box">
+				<img src="F:\\Web designing\github\images\geek.png">
+				<h3><a href="https://geeksforgeeks.com" target="_blank">Geeks for Geeks</a></h3>
+				<p>Learning without practice is as bad as hell.So,geeks for geeks is there to implement your knowledge in corporate world</p>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<p>Karthik webdesign,copyright &copy; 2018</p>
+	</footer>
 </body>
 </html>
